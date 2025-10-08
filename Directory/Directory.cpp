@@ -145,6 +145,23 @@ void Directory::addClient(const Client& client)
 	}
 }
 
+int Directory::getSize() const
+{
+	return size;
+}
+
+Client Directory::getClient(int index) const
+{
+	if (index >= 0 && index < size)
+	{
+		return arr[index];
+	}
+	else
+	{
+		cout << "Index not found.\n";
+	}
+}
+
 void Directory::printClients() const
 {
 	for (int i = 0; i < size; i++)

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 #include "Directory.h"
 #include "Client.h"
 
@@ -14,6 +16,12 @@ int main()
 	array.addClient(client2);
 
 	array.printClients();
+
+	//array.findByName("Aizek Azimov");
+
+
+
+
 
 	return 0;
 }

@@ -125,11 +125,13 @@
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Directory.cpp" />
+    <ClCompile Include="FileHandler.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h" />
     <ClInclude Include="Directory.h" />
+    <ClInclude Include="FileHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="read.txt" />

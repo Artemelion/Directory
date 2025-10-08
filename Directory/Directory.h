@@ -21,5 +21,7 @@ public:
 	void printClients() const;
 	void addClient(const Client& client);
 
+	int getSize() const;
+	Client getClient(int index) const;
 };
 
