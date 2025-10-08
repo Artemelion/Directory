@@ -46,27 +46,92 @@ Directory::~Directory()
 
 void Directory::findByName(const string& name) const
 {
-
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i].getName() == name)
+		{
+			cout << "Client found:\n";
+			cout << "Name: " << arr[i].getName() << "\n";
+			cout << "Owner: " << arr[i].getOwner() << "\n";
+			cout << "Phone: " << arr[i].getPhone() << "\n";
+			cout << "Address: " << arr[i].getAddress() << "\n";
+			cout << "Activity: " << arr[i].getActivity() << "\n\n";
+			return;
+		}
+	}
+	cout << "Client with name " << name << " not found.\n";
 }
 
 void Directory::findByOwner(const string& owner) const
 {
-
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i].getName() == owner)
+		{
+			cout << "Client found:\n";
+			cout << "Name: " << arr[i].getName() << "\n";
+			cout << "Owner: " << arr[i].getOwner() << "\n";
+			cout << "Phone: " << arr[i].getPhone() << "\n";
+			cout << "Address: " << arr[i].getAddress() << "\n";
+			cout << "Activity: " << arr[i].getActivity() << "\n\n";
+			return;
+		}
+	}
+	cout << "Client with name " << owner << " not found.\n";
 }
 
 void Directory::findByNumber(const string& phone) const
 {
-
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i].getName() == phone)
+		{
+			cout << "Client found:\n";
+			cout << "Name: " << arr[i].getName() << "\n";
+			cout << "Owner: " << arr[i].getOwner() << "\n";
+			cout << "Phone: " << arr[i].getPhone() << "\n";
+			cout << "Address: " << arr[i].getAddress() << "\n";
+			cout << "Activity: " << arr[i].getActivity() << "\n\n";
+			return;
+		}
+	}
+	cout << "Client with name " << phone << " not found.\n";
 }
 
 void Directory::findByAddress(const string& address) const
 {
-
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i].getName() == address)
+		{
+			cout << "Client found:\n";
+			cout << "Name: " << arr[i].getName() << "\n";
+			cout << "Owner: " << arr[i].getOwner() << "\n";
+			cout << "Phone: " << arr[i].getPhone() << "\n";
+			cout << "Address: " << arr[i].getAddress() << "\n";
+			cout << "Activity: " << arr[i].getActivity() << "\n\n";
+			return;
+		}
+	}
+	cout << "Client with name " << address << " not found.\n";
 }
 
 void Directory::findByActivity(const string& activity) const
 {
-
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i].getName() == activity)
+		{
+			cout << "Client found:\n";
+			cout << "Name: " << arr[i].getName() << "\n";
+			cout << "Owner: " << arr[i].getOwner() << "\n";
+			cout << "Phone: " << arr[i].getPhone() << "\n";
+			cout << "Address: " << arr[i].getAddress() << "\n";
+			cout << "Activity: " << arr[i].getActivity() << "\n\n";
+			return;
+		}
+	}
+	cout << "Client with name " << activity << " not found.\n";
 }
 
 
