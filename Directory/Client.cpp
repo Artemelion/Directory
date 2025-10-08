@@ -20,28 +20,6 @@ Client::Client(string name, string owner, string phone, string address, string a
 	this->activity = activity;
 }
 
-Client::Client(const Client& other)
-{
-	name = other.name;
-	owner = other.owner;
-	phone = other.phone;
-	address = other.address;
-	activity = other.activity;
-}
-
-Client& Client::operator=(const Client& other)
-{
-	if (this != &other)
-	{
-		name = other.name;
-		owner = other.owner;
-		phone = other.phone;
-		address = other.address;
-		activity = other.activity;
-	}
-	return *this;
-}
-
 Client::~Client() {}
 
 string Client::getName() const

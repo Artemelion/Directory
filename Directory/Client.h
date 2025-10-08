@@ -11,8 +11,7 @@ class Client
 public:
 	Client();
 	Client(string name, string owner, string phone, string address, string activity);
-	Client(const Client& other);
-	Client& operator=(const Client& other);
+	// no need copy semanthic due to field are not use dynamic memory
 	~Client();
 
 
