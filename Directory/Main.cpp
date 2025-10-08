@@ -3,6 +3,7 @@
 #include <string>
 #include "Directory.h"
 #include "Client.h"
+#include "FileHandler.h"
 
 using namespace std;
 
@@ -15,10 +16,17 @@ int main()
 	array.addClient(client1);
 	array.addClient(client2);
 
-	array.printClients();
-
+	//array.printClients();
 	//array.findByName("Aizek Azimov");
 
+	// Save to file
+	FileHandler::saveFile(array);
+	// Read from file
+	Directory newArray(2);
+	newArray.operator=(array); 
+	FileHandler::readFile(newArray);
+
+	newArray.printClients();
 
 
 
